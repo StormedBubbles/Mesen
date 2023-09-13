@@ -612,10 +612,10 @@ extern "C" {
 				keyMappings.Mapping1.PartyTapButtons[4] = getKeyCode(4, RETRO_DEVICE_ID_JOYPAD_L);
 				keyMappings.Mapping1.PartyTapButtons[5] = getKeyCode(4, RETRO_DEVICE_ID_JOYPAD_R);
 
-				unsigned powerPadPort = 0;
-				if(_console->GetSettings()->GetExpansionDevice() == ExpansionPortDevice::FamilyTrainerMat) {
-					powerPadPort = 4;
-				}
+				unsigned powerPadPort = 4;
+				//if(_console->GetSettings()->GetExpansionDevice() == ExpansionPortDevice::FamilyTrainerMat) {
+				//	powerPadPort = 4;
+				//}
 
 				keyMappings.Mapping1.PowerPadButtons[0] = getKeyCode(powerPadPort, RETRO_DEVICE_ID_JOYPAD_B);
 				keyMappings.Mapping1.PowerPadButtons[1] = getKeyCode(powerPadPort, RETRO_DEVICE_ID_JOYPAD_A);
